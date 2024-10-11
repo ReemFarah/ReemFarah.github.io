@@ -98,17 +98,28 @@
     </div>
     <figure id="Location4"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
 </section>
-     <section></section>
-    <div class="chart-description">
-        <h2>Section 5: China Electricity Chart</h2>
-        <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
-            We've organised the page into sections, with each section containing a chart, title and a description. Here, we can describe the chart and give some context.
-            As a first example, we're using a basic chart from our repo.
-        </p>
-    </div>
-    <figure id="Location5"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
 </section>
-
+<section></section>
+<div class="chart-description">
+    <h2>Section 5: China Electricity Chart</h2>
+    <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
+        We've organised the page into sections, with each section containing a chart, title and a description. Here, we can describe the chart and give some context.
+        As a first example, we're using a basic chart from our repo.
+    </p>
+</div>
+<figure id="Location5"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
+</section>
+</section>
+<section></section>
+<div class="chart-description">
+    <h2>Section 6: USA Electricity Chart</h2>
+    <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
+        We've organised the page into sections, with each section containing a chart, title and a description. Here, we can describe the chart and give some context.
+        As a first example, we're using a basic chart from our repo.
+    </p>
+</div>
+<figure id="Location6"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
+</section>
     <!-- Do you want to add more sections? -->
         <!-- Try copying pasting the section above -->
         <!-- You'll need to change the id of the figure "<figure id="Location3"... -->
@@ -123,7 +134,8 @@
         let figure_2_spec = "W1-CHARTS.JSON"
         let figure_3_spec = "W1-Chart2.json"
         let figure_4_spec = "W1-Chart3.json"
-        let figure_5_spec = "W2-Chart1.json"
+        let figure_5_spec = "wk2_chart1.json"
+        let figure_6_spec = "wk2_chart2.json"
             
                                                                                // You should have a spec for a graph in this same folder. Just specify its name here, e.g. let figure_1_spec = "chart1.json"
 
@@ -132,6 +144,7 @@
         vegaEmbed('#Location3', figure_3_spec)
         vegaEmbed('#Location4', figure_4_spec)
         vegaEmbed('#Location5', figure_5_spec)
+        vegaEmbed('#Location6', figure_6_spec)
 
         // Do you want to add more graphs?
         // try defining a new variable for figure_3_spec, adding VegaEmbed for Location3, and adding a new section in the HTML
