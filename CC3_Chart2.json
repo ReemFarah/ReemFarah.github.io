@@ -1,0 +1,30 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "Productivity Growth Comparison: UK vs. G7 Countries (2000-2023)",
+  "data": {
+    "values": [
+      {"Country": "UK", "Productivity Growth": 23},
+      {"Country": "USA", "Productivity Growth": 35},
+      {"Country": "Germany", "Productivity Growth": 30},
+      {"Country": "France", "Productivity Growth": 28},
+      {"Country": "Italy", "Productivity Growth": 15},
+      {"Country": "Canada", "Productivity Growth": 25},
+      {"Country": "Japan", "Productivity Growth": 20}
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {"field": "Country", "type": "nominal", "title": "Country", "sort": "-y"},
+    "y": {"field": "Productivity Growth", "type": "quantitative", "title": "Productivity Growth (%)"},
+    "color": {
+      "field": "Productivity Growth",
+      "type": "quantitative",
+      "scale": {"scheme": "blues"},
+      "legend": {"title": "Productivity Growth (%)"}
+    },
+    "tooltip": [
+      {"field": "Country", "type": "nominal", "title": "Country"},
+      {"field": "Productivity Growth", "type": "quantitative", "title": "Productivity Growth (%)"}
+    ]
+  }
+}
