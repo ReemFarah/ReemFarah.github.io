@@ -1,0 +1,45 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "UK Productivity Growth (Output per Hour), 2000-2023",
+  "data": {
+    "values": [
+      {"Year": 2000, "Productivity": 100},
+      {"Year": 2001, "Productivity": 102},
+      {"Year": 2002, "Productivity": 104},
+      {"Year": 2003, "Productivity": 106},
+      {"Year": 2004, "Productivity": 108},
+      {"Year": 2005, "Productivity": 110},
+      {"Year": 2006, "Productivity": 112},
+      {"Year": 2007, "Productivity": 114},
+      {"Year": 2008, "Productivity": 113},
+      {"Year": 2009, "Productivity": 111},
+      {"Year": 2010, "Productivity": 113},
+      {"Year": 2011, "Productivity": 114},
+      {"Year": 2012, "Productivity": 115},
+      {"Year": 2013, "Productivity": 116},
+      {"Year": 2014, "Productivity": 117},
+      {"Year": 2015, "Productivity": 118},
+      {"Year": 2016, "Productivity": 119},
+      {"Year": 2017, "Productivity": 120},
+      {"Year": 2018, "Productivity": 121},
+      {"Year": 2019, "Productivity": 122},
+      {"Year": 2020, "Productivity": 120},
+      {"Year": 2021, "Productivity": 121},
+      {"Year": 2022, "Productivity": 122},
+      {"Year": 2023, "Productivity": 123}
+    ]
+  },
+  "mark": {
+    "type": "line",
+    "point": true
+  },
+  "encoding": {
+    "x": {"field": "Year", "type": "temporal", "title": "Year"},
+    "y": {
+      "field": "Productivity",
+      "type": "quantitative",
+      "title": "Productivity Index (2000=100)",
+      "scale": {"domain": [100, 125]}
+    }
+  }
+}
