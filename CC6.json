@@ -1,0 +1,515 @@
+{
+  "config": {"view": {"continuousWidth": 300, "continuousHeight": 300}},
+  "vconcat": [
+    {
+      "hconcat": [
+        {
+          "data": {"name": "data-1670749b2280bfaad8d76fa191761d2a"},
+          "mark": {"type": "line", "point": true},
+          "encoding": {
+            "tooltip": [
+              {"field": "date", "type": "temporal"},
+              {"field": "value", "type": "quantitative"}
+            ],
+            "x": {"field": "date", "title": "Year", "type": "temporal"},
+            "y": {
+              "field": "value",
+              "title": "Subscriptions (Per 100 People)",
+              "type": "quantitative"
+            }
+          },
+          "height": 200,
+          "title": "Mobile Data Subscriptions (Per 100 People)",
+          "width": 250
+        },
+        {
+          "data": {"name": "data-1a5b1bd2d6e39a8c420c7ef9825ed898"},
+          "mark": {"type": "line", "point": true},
+          "encoding": {
+            "tooltip": [
+              {"field": "date", "type": "temporal"},
+              {"field": "value", "type": "quantitative"}
+            ],
+            "x": {"field": "date", "title": "Year", "type": "temporal"},
+            "y": {
+              "field": "value",
+              "title": "Percentage",
+              "type": "quantitative"
+            }
+          },
+          "height": 200,
+          "title": "Internet Users (% of Population)",
+          "width": 250
+        },
+        {
+          "data": {"name": "data-0a3438a84633f942d5ab87caf0e52b03"},
+          "mark": {"type": "line", "point": true},
+          "encoding": {
+            "tooltip": [
+              {"field": "date", "type": "temporal"},
+              {"field": "value", "type": "quantitative"}
+            ],
+            "x": {"field": "date", "title": "Year", "type": "temporal"},
+            "y": {
+              "field": "value",
+              "title": "Percentage",
+              "type": "quantitative"
+            }
+          },
+          "height": 200,
+          "title": "Mobile Money Accounts (% of Adults)",
+          "width": 250
+        }
+      ]
+    },
+    {
+      "hconcat": [
+        {
+          "layer": [
+            {
+              "data": {"name": "data-1a5b1bd2d6e39a8c420c7ef9825ed898"},
+              "mark": {"type": "line", "point": true},
+              "encoding": {
+                "color": {"value": "green"},
+                "tooltip": [
+                  {"field": "date", "type": "temporal"},
+                  {"field": "value", "type": "quantitative"}
+                ],
+                "x": {"field": "date", "title": "Year", "type": "temporal"},
+                "y": {
+                  "field": "value",
+                  "title": "Value",
+                  "type": "quantitative"
+                }
+              }
+            },
+            {
+              "data": {"name": "data-1670749b2280bfaad8d76fa191761d2a"},
+              "mark": {"type": "line", "point": true},
+              "encoding": {
+                "color": {"value": "blue"},
+                "tooltip": [
+                  {"field": "date", "type": "temporal"},
+                  {"field": "value", "type": "quantitative"}
+                ],
+                "x": {"field": "date", "type": "temporal"},
+                "y": {"field": "value", "type": "quantitative"}
+              },
+              "title": "Comparison: Internet Users vs. Mobile Data"
+            }
+          ],
+          "height": 200,
+          "width": 250
+        },
+        {
+          "data": {"name": "data-1670749b2280bfaad8d76fa191761d2a"},
+          "mark": {"type": "area", "opacity": 0.3},
+          "encoding": {
+            "tooltip": [
+              {"field": "date", "type": "temporal"},
+              {"field": "cumulative", "type": "quantitative"}
+            ],
+            "x": {"field": "date", "title": "Year", "type": "temporal"},
+            "y": {
+              "field": "cumulative",
+              "title": "Cumulative Subscriptions",
+              "type": "quantitative"
+            }
+          },
+          "height": 200,
+          "title": "Cumulative Mobile Data Growth",
+          "width": 250
+        },
+        {
+          "data": {"name": "data-1a5b1bd2d6e39a8c420c7ef9825ed898"},
+          "mark": {"type": "bar"},
+          "encoding": {
+            "tooltip": [
+              {"field": "date", "type": "temporal"},
+              {"field": "growth_rate", "type": "quantitative"}
+            ],
+            "x": {"field": "date", "title": "Year", "type": "temporal"},
+            "y": {
+              "field": "growth_rate",
+              "title": "Growth Rate (%)",
+              "type": "quantitative"
+            }
+          },
+          "height": 200,
+          "title": "Internet Users Annual Growth Rate",
+          "width": 250
+        }
+      ]
+    },
+    {
+      "hconcat": [
+        {
+          "layer": [
+            {
+              "data": {"name": "data-1a5b1bd2d6e39a8c420c7ef9825ed898"},
+              "mark": {"type": "line", "point": true},
+              "encoding": {
+                "color": {"value": "green"},
+                "tooltip": [
+                  {"field": "date", "type": "temporal"},
+                  {"field": "value", "type": "quantitative"}
+                ],
+                "x": {"field": "date", "title": "Year", "type": "temporal"},
+                "y": {
+                  "field": "value",
+                  "title": "Percentage",
+                  "type": "quantitative"
+                }
+              }
+            },
+            {
+              "data": {"name": "data-0a3438a84633f942d5ab87caf0e52b03"},
+              "mark": {"type": "line", "point": true},
+              "encoding": {
+                "color": {"value": "purple"},
+                "tooltip": [
+                  {"field": "date", "type": "temporal"},
+                  {"field": "value", "type": "quantitative"}
+                ],
+                "x": {"field": "date", "type": "temporal"},
+                "y": {"field": "value", "type": "quantitative"}
+              },
+              "title": "Internet Users vs. Mobile Money Accounts"
+            }
+          ],
+          "height": 200,
+          "width": 250
+        },
+        {
+          "data": {"name": "data-0a3438a84633f942d5ab87caf0e52b03"},
+          "mark": {"type": "bar"},
+          "encoding": {
+            "tooltip": [
+              {"field": "date", "type": "temporal"},
+              {"field": "value", "type": "quantitative"}
+            ],
+            "x": {"field": "date", "title": "Year", "type": "temporal"},
+            "y": {
+              "field": "value",
+              "title": "Percentage of Adults",
+              "type": "quantitative"
+            }
+          },
+          "height": 200,
+          "title": "Mobile Money Accounts (Bar Chart)",
+          "width": 250
+        },
+        {
+          "data": {"name": "data-1670749b2280bfaad8d76fa191761d2a"},
+          "mark": {"type": "line", "point": true},
+          "encoding": {
+            "tooltip": [
+              {"field": "date", "type": "temporal"},
+              {"field": "value", "type": "quantitative"}
+            ],
+            "x": {"field": "date", "title": "Year", "type": "temporal"},
+            "y": {
+              "field": "value",
+              "title": "Subscriptions Per 100 People",
+              "type": "quantitative"
+            }
+          },
+          "height": 200,
+          "title": "Mobile Data Subscriptions with Annotations",
+          "width": 250
+        }
+      ]
+    }
+  ],
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
+  "datasets": {
+    "data-1670749b2280bfaad8d76fa191761d2a": [
+      {
+        "date": "2023-01-01T00:00:00",
+        "value": 66700000,
+        "cumulative": 66700000
+      },
+      {
+        "date": "2022-01-01T00:00:00",
+        "value": 65700000,
+        "cumulative": 132400000
+      },
+      {
+        "date": "2021-01-01T00:00:00",
+        "value": 65100000,
+        "cumulative": 197500000
+      },
+      {
+        "date": "2020-01-01T00:00:00",
+        "value": 61400000,
+        "cumulative": 258900000
+      },
+      {
+        "date": "2019-01-01T00:00:00",
+        "value": 54600000,
+        "cumulative": 313500000
+      },
+      {
+        "date": "2018-01-01T00:00:00",
+        "value": 49500000,
+        "cumulative": 363000000
+      },
+      {
+        "date": "2017-01-01T00:00:00",
+        "value": 42800000,
+        "cumulative": 405800000
+      },
+      {
+        "date": "2016-01-01T00:00:00",
+        "value": 39000000,
+        "cumulative": 444800000
+      },
+      {
+        "date": "2015-01-01T00:00:00",
+        "value": 37700000,
+        "cumulative": 482500000
+      },
+      {
+        "date": "2014-01-01T00:00:00",
+        "value": 33600000,
+        "cumulative": 516100000
+      },
+      {
+        "date": "2013-01-01T00:00:00",
+        "value": 31800000,
+        "cumulative": 547900000
+      },
+      {
+        "date": "2012-01-01T00:00:00",
+        "value": 30700000,
+        "cumulative": 578600000
+      },
+      {
+        "date": "2011-01-01T00:00:00",
+        "value": 28100000,
+        "cumulative": 606700000
+      },
+      {
+        "date": "2010-01-01T00:00:00",
+        "value": 25000000,
+        "cumulative": 631700000
+      },
+      {
+        "date": "2009-01-01T00:00:00",
+        "value": 19400000,
+        "cumulative": 651100000
+      },
+      {
+        "date": "2008-01-01T00:00:00",
+        "value": 16300000,
+        "cumulative": 667400000
+      },
+      {
+        "date": "2007-01-01T00:00:00",
+        "value": 11300000,
+        "cumulative": 678700000
+      },
+      {
+        "date": "2006-01-01T00:00:00",
+        "value": 7340000,
+        "cumulative": 686040000
+      },
+      {
+        "date": "2005-01-01T00:00:00",
+        "value": 4610000,
+        "cumulative": 690650000
+      },
+      {
+        "date": "2004-01-01T00:00:00",
+        "value": 2550000,
+        "cumulative": 693200000
+      },
+      {
+        "date": "2003-01-01T00:00:00",
+        "value": 1590000,
+        "cumulative": 694790000
+      },
+      {
+        "date": "2002-01-01T00:00:00",
+        "value": 1190000,
+        "cumulative": 695980000
+      },
+      {"date": "2001-01-01T00:00:00", "value": 600000, "cumulative": 696580000},
+      {"date": "2000-01-01T00:00:00", "value": 127404, "cumulative": 696707404},
+      {"date": "1999-01-01T00:00:00", "value": 23757, "cumulative": 696731161},
+      {"date": "1998-01-01T00:00:00", "value": 10756, "cumulative": 696741917},
+      {"date": "1997-01-01T00:00:00", "value": 6767, "cumulative": 696748684},
+      {"date": "1996-01-01T00:00:00", "value": 2826, "cumulative": 696751510},
+      {"date": "1995-01-01T00:00:00", "value": 2279, "cumulative": 696753789},
+      {"date": "1994-01-01T00:00:00", "value": 1990, "cumulative": 696755779},
+      {"date": "1993-01-01T00:00:00", "value": 1162, "cumulative": 696756941},
+      {"date": "1992-01-01T00:00:00", "value": 1100, "cumulative": 696758041},
+      {"date": "1991-01-01T00:00:00", "value": 0, "cumulative": 696758041},
+      {"date": "1990-01-01T00:00:00", "value": 0, "cumulative": 696758041},
+      {"date": "1989-01-01T00:00:00", "value": 0, "cumulative": 696758041},
+      {"date": "1988-01-01T00:00:00", "value": 0, "cumulative": 696758041},
+      {"date": "1987-01-01T00:00:00", "value": 0, "cumulative": 696758041},
+      {"date": "1986-01-01T00:00:00", "value": 0, "cumulative": 696758041},
+      {"date": "1985-01-01T00:00:00", "value": 0, "cumulative": 696758041},
+      {"date": "1984-01-01T00:00:00", "value": 0, "cumulative": 696758041},
+      {"date": "1983-01-01T00:00:00", "value": 0, "cumulative": 696758041},
+      {"date": "1982-01-01T00:00:00", "value": 0, "cumulative": 696758041},
+      {"date": "1981-01-01T00:00:00", "value": 0, "cumulative": 696758041},
+      {"date": "1980-01-01T00:00:00", "value": 0, "cumulative": 696758041},
+      {"date": "1979-01-01T00:00:00", "value": 0, "cumulative": 696758041},
+      {"date": "1978-01-01T00:00:00", "value": 0, "cumulative": 696758041},
+      {"date": "1977-01-01T00:00:00", "value": 0, "cumulative": 696758041},
+      {"date": "1976-01-01T00:00:00", "value": 0, "cumulative": 696758041},
+      {"date": "1975-01-01T00:00:00", "value": 0, "cumulative": 696758041}
+    ],
+    "data-1a5b1bd2d6e39a8c420c7ef9825ed898": [
+      {"date": "2022-01-01T00:00:00", "value": 40.8137, "growth_rate": null},
+      {
+        "date": "2021-01-01T00:00:00",
+        "value": 38.2459,
+        "growth_rate": -6.291514858981174
+      },
+      {
+        "date": "2020-01-01T00:00:00",
+        "value": 27.5774,
+        "growth_rate": -27.894493265944842
+      },
+      {
+        "date": "2019-01-01T00:00:00",
+        "value": 22.6688,
+        "growth_rate": -17.79935744486427
+      },
+      {
+        "date": "2018-01-01T00:00:00",
+        "value": 19.5,
+        "growth_rate": -13.978684359119143
+      },
+      {
+        "date": "2017-01-01T00:00:00",
+        "value": 17.8271,
+        "growth_rate": -8.578974358974357
+      },
+      {
+        "date": "2016-01-01T00:00:00",
+        "value": 16.6,
+        "growth_rate": -6.883340532111227
+      },
+      {
+        "date": "2015-01-01T00:00:00",
+        "value": 16.5879,
+        "growth_rate": -0.07289156626506532
+      },
+      {
+        "date": "2014-01-01T00:00:00",
+        "value": 16.5,
+        "growth_rate": -0.5299043278534477
+      },
+      {
+        "date": "2013-01-01T00:00:00",
+        "value": 13,
+        "growth_rate": -21.212121212121215
+      },
+      {
+        "date": "2012-01-01T00:00:00",
+        "value": 10.5,
+        "growth_rate": -19.23076923076923
+      },
+      {
+        "date": "2011-01-01T00:00:00",
+        "value": 8.8,
+        "growth_rate": -16.19047619047619
+      },
+      {
+        "date": "2010-01-01T00:00:00",
+        "value": 7.2,
+        "growth_rate": -18.181818181818187
+      },
+      {
+        "date": "2009-01-01T00:00:00",
+        "value": 6.1,
+        "growth_rate": -15.27777777777779
+      },
+      {
+        "date": "2008-01-01T00:00:00",
+        "value": 5.2,
+        "growth_rate": -14.754098360655732
+      },
+      {
+        "date": "2007-01-01T00:00:00",
+        "value": 4.4,
+        "growth_rate": -15.384615384615385
+      },
+      {
+        "date": "2006-01-01T00:00:00",
+        "value": 3.6,
+        "growth_rate": -18.181818181818187
+      },
+      {
+        "date": "2005-01-01T00:00:00",
+        "value": 3.1019,
+        "growth_rate": -13.836111111111116
+      },
+      {
+        "date": "2004-01-01T00:00:00",
+        "value": 3.02353,
+        "growth_rate": -2.526516006318713
+      },
+      {
+        "date": "2003-01-01T00:00:00",
+        "value": 2.9419,
+        "growth_rate": -2.6998243774660757
+      },
+      {
+        "date": "2002-01-01T00:00:00",
+        "value": 1.20777,
+        "growth_rate": -58.94591930385125
+      },
+      {
+        "date": "2001-01-01T00:00:00",
+        "value": 0.619782,
+        "growth_rate": -48.68377257259245
+      },
+      {
+        "date": "2000-01-01T00:00:00",
+        "value": 0.31806,
+        "growth_rate": -48.68195591353089
+      },
+      {
+        "date": "1999-01-01T00:00:00",
+        "value": 0.114256028,
+        "growth_rate": -64.07720933157266
+      },
+      {
+        "date": "1998-01-01T00:00:00",
+        "value": 0.050261388,
+        "growth_rate": -56.00985884088321
+      },
+      {
+        "date": "1997-01-01T00:00:00",
+        "value": 0.034406051,
+        "growth_rate": -31.54576033594615
+      },
+      {
+        "date": "1996-01-01T00:00:00",
+        "value": 0.008839115,
+        "growth_rate": -74.30941725919084
+      },
+      {
+        "date": "1995-01-01T00:00:00",
+        "value": 0.000727482,
+        "growth_rate": -91.76974165400043
+      },
+      {"date": "1994-01-01T00:00:00", "value": 0, "growth_rate": -100},
+      {"date": "1993-01-01T00:00:00", "value": 0, "growth_rate": null},
+      {"date": "1992-01-01T00:00:00", "value": 0, "growth_rate": null},
+      {"date": "1991-01-01T00:00:00", "value": 0, "growth_rate": null},
+      {"date": "1990-01-01T00:00:00", "value": 0, "growth_rate": null}
+    ],
+    "data-0a3438a84633f942d5ab87caf0e52b03": [
+      {"date": "2021-01-01T00:00:00", "value": 79.2},
+      {"date": "2017-01-01T00:00:00", "value": 81.57},
+      {"date": "2014-01-01T00:00:00", "value": 74.66},
+      {"date": "2011-01-01T00:00:00", "value": 42.34}
+    ]
+  }
+}
