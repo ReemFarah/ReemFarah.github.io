@@ -1,0 +1,51 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 500,
+  "height": 250,
+  "layer": [
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/ReemFarah/ReemFarah.github.io/refs/heads/main/Brasil.json",
+        "format": {"property": "features"}
+      },
+      "mark": {
+        "type": "geoshape",
+        "stroke": "white",
+        "strokeWidth": 0.5,
+        "fill": "#024a63"
+      },
+      "encoding": {
+        "tooltip": [
+          {"field": "properties.ESTADO", "type": "nominal", "title": "State Name"},
+          {"field": "properties.REGIAO", "type": "nominal", "title": "Region"}
+        ]
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {"city": "São Paulo", "latitude": -23.5505, "longitude": -46.6333, "population": 12325232},
+          {"city": "Rio de Janeiro", "latitude": -22.9068, "longitude": -43.1729, "population": 6747815},
+          {"city": "Brasília", "latitude": -15.7942, "longitude": -47.8822, "population": 3055149},
+          {"city": "Salvador", "latitude": -12.9714, "longitude": -38.5014, "population": 2886698},
+          {"city": "Fortaleza", "latitude": -3.7172, "longitude": -38.5433, "population": 2686612},
+          {"city": "Belo Horizonte", "latitude": -19.9191, "longitude": -43.9386, "population": 2523794},
+          {"city": "Manaus", "latitude": -3.1019, "longitude": -60.025, "population": 2198822},
+          {"city": "Curitiba", "latitude": -25.4284, "longitude": -49.2733, "population": 1963726},
+          {"city": "Recife", "latitude": -8.0476, "longitude": -34.877, "population": 1645727},
+          {"city": "Porto Alegre", "latitude": -30.0346, "longitude": -51.2177, "population": 1484941}
+        ]
+      },
+      "mark": {"type": "circle", "color": "red", "size": 100},
+      "encoding": {
+        "longitude": {"field": "longitude", "type": "quantitative"},
+        "latitude": {"field": "latitude", "type": "quantitative"},
+        "size": {"field": "population", "type": "quantitative", "scale": {"domain": [1000000, 13000000], "range": [10, 500]}},
+        "tooltip": [
+          {"field": "city", "type": "nominal", "title": "City Name"},
+          {"field": "population", "type": "quantitative", "title": "Population"}
+        ]
+      }
+    }
+  ]
+}

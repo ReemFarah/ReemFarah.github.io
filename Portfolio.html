@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="index.css">
+        <title>Reem's Portfolio</title>
+    
+        <!-- Vega and Vega-Lite Libraries -->
+        <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+    
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: #f9f9f9;
+                color: #333;
+            }
+            h1, h2, h3 {
+                text-align: center;
+                color: #8B0000; /* Brick red for headings */
+            }
+            a {
+                color: #8B0000; /* Brick red for links */
+                text-decoration: none;
+            }
+            a:hover {
+                text-decoration: underline;
+            }
+            .chart-container {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: flex-start;
+                gap: 20px;
+                max-width: 100%; /* Ensures charts use full available width */
+                margin: 0 auto; /* Center container */
+                padding: 0; /* Remove any padding */
+            }
+            section {
+                padding: 0 20px; /* Add consistent padding to sections */
+                margin: 0 auto; /* Center section content */
+            }
+            figure {
+                width: auto; /* Remove fixed width */
+                height: auto; /* Ensure the figure adjusts to content */
+                margin: 0; /* Remove extra margin */
+                border: none; /* Remove border */
+                padding: 0; /* Remove padding */
+                box-shadow: none; /* Remove shadow effect */
+                display: inline-block; /* Ensure figure only wraps the chart */
+            }
+            img {
+                max-width: 300px; /* Limit the width of the image */
+                height: auto; /* Maintain aspect ratio */
+                border: 1px solid #ddd;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+                display: block; /* Ensure it behaves like a block element */
+                margin: 0 auto; /* Center the image horizontally */
+            }
+            .link-container {
+                text-align: center;
+                margin-top: 10px;
+            }
+        </style>
+    </head>
+    
+    
+<head>
+ 
+<body>
+    <h1>Portfolio Coding Challenges</h1>
+    <p style="text-align: center;">This page showcases my portfolio of tasks.</p>
+
+
+   <!-- Section CC1 -->
+   <section>
+    <div class="chart-description">
+        <h2>CC1: Hosting. Display charts in your own site.</h2>
+        <p style="text-align: center;">Below are two charts showcasing basic visualizations as part of CC1.</p>
+
+    </div>
+    <div class="chart-container">
+        <figure id="Location1"></figure>
+        <figure id="Location2"></figure>
+    </div>
+</section>
+
+
+    <!-- Section CC2 -->
+    <section>
+        <div class="chart-description">
+            <h2>CC2: Building. Create your own visualisations</h2>
+            <p style="text-align: center;">Below are three charts created as part of CC2.</p>
+        </div>
+        <div class="chart-container">
+            <figure id="Location3"></figure>
+            <figure id="Location4"></figure>
+            <figure id="Location5"></figure>
+        </div>
+    </section>
+
+      <!-- Section CC3 -->
+      <section>
+        <div class="chart-description">
+            <h2>CC3: Debating. Use a visualisation in economic/policy commentary</h2>
+            <p style="text-align: center;">The UK's persistent productivity challenges since the 2007-09 financial crisis and how to address its economic implications were key topics at the Festival of Economics.</p>
+        </p>
+        </div>
+        <div class="chart-container">
+            <figure id="Location6"></figure>
+            <p style="text-align: center;">UK productivity has stagnated since the financial crisis, highlighting a lack of substantial growth over two decades. Effective policy reforms are needed to reverse this trend.</p>
+            <figure id="Location7"></figure>
+            <p style="text-align: center;">The UK's productivity lags behind other G7 nations, with the gap widening post-2009. This underscores the urgency of addressing productivity shortfalls in global competitiveness.</p>
+        </div>
+    </section>
+
+ <!-- Section CC4 -->
+<section>
+    <div class="chart-description">
+        <h2>CC4: Replication. Re-create, then improve, someone else’s chart</h2>
+        <p style="text-align: center;">Below is a replicated chart and an image of a poorly designed chart for Iowa Elections' Poll Analysis.</p>
+    </div>
+    <div class="chart-container">
+        <img src="https://github.com/ReemFarah/ReemFarah.github.io/blob/main/Bad_Graph.png?raw=true" 
+             alt="A bad graph showing candidate Yang leading the polls" 
+             style="width: 45%; height: auto; border: 1px solid #ddd; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);">
+        <figure id="Location8"></figure>
+        <figure id="Location9"></figure>
+        <p style="text-align: center;">The improved chart enhances clarity with a subtitle, accessible colors, sorted data, and better axis labels, ensuring an intuitive, visually appealing, and inclusive design.</p>
+    </div>
+</section>
+
+      <!-- Section CC5 -->
+      <section>
+        <div class="chart-description">
+            <h2>CC5:Scraper. Implement a data scraper of your own.</h2>
+            <p style="text-align: center;">Below are three charts created as part of CC5 scraping two webistes.</p>
+        </div>
+        <div class="chart-container">
+            <figure id="Location10"></figure>
+            <p style="text-align: center;"></p>I chose "Books to Scrape" because it’s a beginner-friendly website designed for web scraping, with well-structured and accessible data for easy analysis and visualisation.</p>
+            <figure id="Location11"></figure>
+            <figure id="Location12"></figure>
+            <p style="text-align: center;"></p>These charts highlight the population distribution of countries globally, providing insights into demographic patterns with the top ten populous nations clearly visualised.</p>
+        </div>
+        <div style="text-align: center; margin-top: 10px;">
+            <a href="https://colab.research.google.com/drive/1GIFF08Z68nRAqAzO5-WjySsh_T5MvaKL?usp=sharing" target="_blank">View CC5 Colab Notebook</a>
+        </div>
+        
+        
+    </section>
+
+
+      <!-- Section CC6 -->
+      <section>
+        <div class="chart-description">
+            <h2>CC6:Loops. Build a dashboard</h2>
+            <p style="text-align: center;">Below is a dashboard created as part of my project using 3 World Banks' API</p>
+        </div>
+        <div class="chart-container">
+            <figure id="Location13"></figure>
+            <p style="text-align: center;"></p>Technological advancements, particularly in mobile data and internet accessibility, directly drive financial inclusion by enabling mobile money platforms and digital financial services in Kenya.</p>
+        </div>
+        <div style="text-align: center; margin-top: 10px;">
+            <a href="https://colab.research.google.com/drive/14ED1wR8QVMU5YF4jpPkbbKEPQJvvxHiO?usp=sharing" target="_blank">View CC6 Colab Notebook</a>
+        </div>
+        
+    </section>
+
+    <!-- Section CC7 -->
+    <section>
+        <div class="chart-description">
+            <h2>CC7:Maps. Base maps and choropleths</h2>
+            <p style="text-align: center;">Below are three Maps of Brazil, Base, Point and Choropleth.</p>
+        </div>
+        <div class="chart-container">
+            <figure id="Location14"></figure>
+            <figure id="Location15"></figure>
+            <p style="text-align: center;"></p>The map highlights Brazil’s 10 most populous cities, with point size proportional to population, overlaid on a geoshape map of Brazil's state borders
+            <figure id="Location16"></figure>
+            <p style="text-align: center;"></p>This map visualises the population distribution across all Brazilian states, using color intensity to emphasize the most populous states like São Paulo and Minas Gerais.</p>
+        </div>
+
+    </section>
+
+     <!-- Section CC8 -->
+     <section>
+        <div class="chart-description">
+            <h2>CC8:Big Data. Extracting a story from millions of prices</h2>
+            <p style="text-align: center;">Below are two graphs using UK supermarkets and regional price data</p>
+        </div>
+        <div class="chart-container">
+            <figure id="Location17"></figure>
+            <p style="text-align: center;"></p>This chart shows the average price trends for a specific product category (e.g., 'Dairy') over time. Aggregating daily prices highlights temporal price variations and seasonal effects, offering insights into market behaviour and price fluctuations</p>
+            <figure id="Location18"></figure>
+            <p style="text-align: center;"></p>This bar chart compares the average prices of products across different stores. It emphasises price disparities among retailers, aiding in identifying stores with consistently higher or lower pricing strategies.</p>
+        </div>
+        <div style="text-align: center; margin-top: 10px;">
+            <a href="https://colab.research.google.com/drive/1RNWpkhoVXaUAaV_NMFn-bZX3fWLrQoFu?usp=sharing" target="_blank">View CC8 Colab Notebook</a>
+        </div>
+        
+    </section>
+
+     <!-- Section CC9 -->
+     <section>
+        <div class="chart-description">
+            <h2>CC9:Analytics charts</h2>
+            <p style="text-align: center;">Below two charts using the same cleaned data from UK supermarkets and regional prices.</p>
+        </div>
+        <div class="chart-container">
+            <figure id="Location19"></figure>
+            <p style="text-align: center;"></p>The histogram visualises the distribution of product prices (≤ £20), showing the frequency of different price ranges and identifying common pricing patterns.</p>
+            <figure id="Location20"></figure>
+            <p style="text-align: center;"></p>This scatter plot shows the daily average prices over time, highlighting trends in product pricing with a regression line indicating the overall direction.</p>
+        </div>
+        <div style="text-align: center; margin-top: 10px;">
+            <a href="https://colab.research.google.com/drive/1xy28RcO7kZ-PDOsCkTGne8BkZFtPZEwB?usp=sharing" target="_blank">View CC9 Colab Notebook</a>
+        </div>        
+    </section>
+
+     <!-- Section CC10 -->
+     <section>
+        <div class="chart-description">
+            <h2>CC10:Option 1. Interactive Visualisations</h2>
+            <p style="text-align: center;">Below are interactive charts that are part of my project</p>
+        </div>
+        <div class="chart-container">
+            <figure id="Location21"></figure>
+            <p style="text-align: center;"></p>Kenya's technological growth shows rapid mobile adoption, rising internet users, and financial inclusion through mobile money, highlighted interactively via three key indicators since 2000</p>
+            <figure id="Location22"></figure>
+            <p style="text-align: center;"></p>This chart illustrates the adoption of mobile money accounts across age groups over time, highlighting higher adoption rates among older age groups in Kenya.</p>
+        </div>
+        <div style="text-align: center; margin-top: 10px;">
+            <a href="https://colab.research.google.com/drive/13G6TVbPYw1qwNWak0M2xPvfFBzYcDdZk?usp=sharing" target="_blank">View CC10 Colab Notebook</a>
+        </div>        
+    </section>
+
+
+    <!-- Vega Embed Script -->
+    <script>
+        let figure_1_spec = "W1-Chart2.json";
+        let figure_2_spec = "W1-Chart3.json";
+        let figure_3_spec = "wk2_chart1.json";
+        let figure_4_spec = "wk2_chart2.json";
+        let figure_5_spec = "vice_spending.json";
+        let figure_6_spec = "CC3_chart1.json";
+        let figure_7_spec = "CC3_chart2.json";                      
+        let figure_8_spec = "CC4_replicated chart.json";
+        let figure_9_spec = "CC4_improved chart.json";
+        let figure_10_spec = "CC5_chart1.json"
+        let figure_11_spec = "CC5_chart2.json"
+        let figure_12_spec = "CC5_chart3.json"
+        let figure_13_spec = "CC6_chart1.json"
+        let figure_14_spec = "CC7_Br_Base_Map.json"
+        let figure_15_spec = "CC7_Br_Point_Map.json"
+        let figure_16_spec = "CC7_Br_Choro_Map"
+        let figure_17_spec = "CC8_chart1.json"
+        let figure_18_spec = "CC8_chart2.json"
+        let figure_19_spec = "CC9_chart1.json"
+        let figure_20_spec = "CC9_chart2.json"
+        let figure_21_spec = "CC10_Chart1.json"
+        let figure_22_spec = "CC10_Chart2.json"
+
+        // Embedding the charts
+        vegaEmbed('#Location1', figure_1_spec);
+        vegaEmbed('#Location2', figure_2_spec);
+        vegaEmbed('#Location3', figure_3_spec);
+        vegaEmbed('#Location4', figure_4_spec);
+        vegaEmbed('#Location5', figure_5_spec);
+        vegaEmbed('#Location6', figure_6_spec);
+        vegaEmbed('#Location7', figure_7_spec);
+        vegaEmbed('#Location8', figure_8_spec);
+        vegaEmbed('#Location9', figure_9_spec);
+        vegaEmbed('#Location10', figure_10_spec);
+        vegaEmbed('#Location11', figure_11_spec);
+        vegaEmbed('#Location12', figure_12_spec);
+        vegaEmbed('#Location13', figure_13_spec);
+        vegaEmbed('#Location14', figure_14_spec);
+        vegaEmbed('#Location15', figure_15_spec);
+        vegaEmbed('#Location16', figure_16_spec);
+        vegaEmbed('#Location17', figure_17_spec);
+        vegaEmbed('#Location18', figure_18_spec);
+        vegaEmbed('#Location19', figure_19_spec);
+        vegaEmbed('#Location20', figure_20_spec);
+        vegaEmbed('#Location21', figure_21_spec);
+        vegaEmbed('#Location22', figure_22_spec);
+
+    </script>
+</body>
+</html>

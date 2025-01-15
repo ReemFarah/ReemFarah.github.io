@@ -1,0 +1,114 @@
+{
+    "config": {"view": {"continuousWidth": 300, "continuousHeight": 300}},
+    "data": {"name": "data-aead502d344af9c716397c01167b65af"},
+    "mark": {"type": "rect"},
+    "encoding": {
+      "color": {
+        "field": "Correlation",
+        "scale": {"scheme": "viridis"},
+        "type": "quantitative"
+      },
+      "tooltip": [
+        {"field": "Variable 1", "type": "nominal"},
+        {"field": "Variable 2", "type": "nominal"},
+        {"field": "Correlation", "type": "quantitative"}
+      ],
+      "x": {"field": "Variable 1", "title": "", "type": "nominal"},
+      "y": {"field": "Variable 2", "title": "", "type": "nominal"}
+    },
+    "height": 400,
+    "params": [
+      {
+        "name": "param_1",
+        "select": {"type": "interval", "encodings": ["x", "y"]},
+        "bind": "scales"
+      }
+    ],
+    "title": "Interactive Correlation Heatmap: Technology and Financial Inclusion",
+    "width": 400,
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
+    "datasets": {
+      "data-aead502d344af9c716397c01167b65af": [
+        {
+          "Variable 1": "Owns_Mobile",
+          "Variable 2": "Owns_Mobile",
+          "Correlation": 1
+        },
+        {
+          "Variable 1": "Has_Internet_Access",
+          "Variable 2": "Owns_Mobile",
+          "Correlation": 0.27956201918575
+        },
+        {
+          "Variable 1": "Has_Financial_Account",
+          "Variable 2": "Owns_Mobile",
+          "Correlation": -0.1992376522355406
+        },
+        {
+          "Variable 1": "Made_Digital_Payment",
+          "Variable 2": "Owns_Mobile",
+          "Correlation": -0.354144159617723
+        },
+        {
+          "Variable 1": "Owns_Mobile",
+          "Variable 2": "Has_Internet_Access",
+          "Correlation": 0.27956201918575
+        },
+        {
+          "Variable 1": "Has_Internet_Access",
+          "Variable 2": "Has_Internet_Access",
+          "Correlation": 1
+        },
+        {
+          "Variable 1": "Has_Financial_Account",
+          "Variable 2": "Has_Internet_Access",
+          "Correlation": -0.28751388803972117
+        },
+        {
+          "Variable 1": "Made_Digital_Payment",
+          "Variable 2": "Has_Internet_Access",
+          "Correlation": -0.3165352055555673
+        },
+        {
+          "Variable 1": "Owns_Mobile",
+          "Variable 2": "Has_Financial_Account",
+          "Correlation": -0.1992376522355406
+        },
+        {
+          "Variable 1": "Has_Internet_Access",
+          "Variable 2": "Has_Financial_Account",
+          "Correlation": -0.28751388803972117
+        },
+        {
+          "Variable 1": "Has_Financial_Account",
+          "Variable 2": "Has_Financial_Account",
+          "Correlation": 1
+        },
+        {
+          "Variable 1": "Made_Digital_Payment",
+          "Variable 2": "Has_Financial_Account",
+          "Correlation": 0.45780633437685947
+        },
+        {
+          "Variable 1": "Owns_Mobile",
+          "Variable 2": "Made_Digital_Payment",
+          "Correlation": -0.354144159617723
+        },
+        {
+          "Variable 1": "Has_Internet_Access",
+          "Variable 2": "Made_Digital_Payment",
+          "Correlation": -0.3165352055555673
+        },
+        {
+          "Variable 1": "Has_Financial_Account",
+          "Variable 2": "Made_Digital_Payment",
+          "Correlation": 0.45780633437685947
+        },
+        {
+          "Variable 1": "Made_Digital_Payment",
+          "Variable 2": "Made_Digital_Payment",
+          "Correlation": 1
+        }
+      ]
+    }
+  }

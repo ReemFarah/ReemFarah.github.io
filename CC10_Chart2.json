@@ -1,0 +1,45 @@
+{
+    "config": {"view": {"continuousWidth": 300, "continuousHeight": 300}},
+    "data": {"name": "data-06dedd11835edd8d2261ef30d8b42178"},
+    "mark": {"type": "bar"},
+    "encoding": {
+      "color": {"field": "age_group", "legend": null, "type": "nominal"},
+      "tooltip": [
+        {"field": "age_group", "title": "Age Group", "type": "nominal"},
+        {"field": "value", "title": "Percentage (%)", "type": "quantitative"},
+        {"field": "date", "title": "Year", "type": "ordinal"}
+      ],
+      "x": {"field": "age_group", "title": "Age Group", "type": "nominal"},
+      "y": {
+        "field": "value",
+        "title": "Percentage of Ownership",
+        "type": "quantitative"
+      }
+    },
+    "height": 400,
+    "params": [
+      {
+        "name": "param_1",
+        "select": {"type": "point", "fields": ["date"]},
+        "bind": {
+          "input": "range",
+          "max": 2021,
+          "min": 2011,
+          "name": "Select Year: ",
+          "step": 1
+        }
+      }
+    ],
+    "title": "Adoption of Mobile Money Accounts by Age Group Over Time",
+    "transform": [{"filter": {"param": "param_1"}}],
+    "width": 700,
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
+    "datasets": {
+      "data-06dedd11835edd8d2261ef30d8b42178": [
+        {"date": 2021, "value": 79.2, "age_group": "45-54"},
+        {"date": 2017, "value": 81.57, "age_group": "55+"},
+        {"date": 2014, "value": 74.66, "age_group": "35-44"},
+        {"date": 2011, "value": 42.34, "age_group": "55+"}
+      ]
+    }
+  }

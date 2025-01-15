@@ -1,0 +1,36 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": {
+      "text": "International Productivity Comparison (2024)",
+      "subtitle": "Source: Organisation for Economic Co-operation and Development (OECD)"
+    },
+    "width": 600,
+    "height": 300,
+    "data": {
+      "values": [
+        {"Country": "UK", "Productivity": 105},
+        {"Country": "USA", "Productivity": 130},
+        {"Country": "Germany", "Productivity": 125},
+        {"Country": "France", "Productivity": 120},
+        {"Country": "Japan", "Productivity": 115}
+      ]
+    },
+    "mark": "bar",
+    "encoding": {
+      "x": {"field": "Country", "type": "nominal", "title": "Country"},
+      "y": {"field": "Productivity", "type": "quantitative", "title": "Productivity Index (2000=100)"},
+      "color": {"field": "Country", "type": "nominal", "legend": null},
+      "tooltip": [
+        {"field": "Country", "type": "nominal", "title": "Country"},
+        {"field": "Productivity", "type": "quantitative", "title": "Productivity Index"}
+      ]
+    },
+    "config": {
+      "title": {
+        "subtitleFontSize": 12,
+        "subtitleFontStyle": "italic",
+        "subtitlePadding": 10
+      }
+    }
+  }
+  
