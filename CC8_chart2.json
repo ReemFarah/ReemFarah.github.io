@@ -1,0 +1,46 @@
+{
+    "config": {
+      "view": {"continuousWidth": 300, "continuousHeight": 300, "strokeWidth": 0},
+      "axis": {"grid": true, "labelFontSize": 12, "titleFontSize": 14}
+    },
+    "data": {"name": "data-9f385acb26cd808d6d75189024e182c3"},
+    "mark": {"type": "bar", "color": "dodgerblue"},
+    "encoding": {
+      "tooltip": [
+        {"field": "store_id_y", "title": "Store ID", "type": "nominal"},
+        {
+          "field": "price",
+          "format": ".1f",
+          "title": "Average Price (£)",
+          "type": "quantitative"
+        }
+      ],
+      "x": {
+        "field": "store_id_y",
+        "sort": null,
+        "title": "Store ID",
+        "type": "nominal"
+      },
+      "y": {
+        "axis": {"format": ".1f"},
+        "field": "price",
+        "title": "Average Price (£)",
+        "type": "quantitative"
+      }
+    },
+    "height": 500,
+    "title": "Average Prices by Store",
+    "width": 800,
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
+    "datasets": {
+      "data-9f385acb26cd808d6d75189024e182c3": [
+        {"store_id_y": "1", "price": 3.5},
+        {"store_id_y": "2", "price": 4},
+        {"store_id_y": "3", "price": 3.8},
+        {"store_id_y": "4", "price": 2},
+        {"store_id_y": "5", "price": 5},
+        {"store_id_y": "6", "price": 4.5},
+        {"store_id_y": "7", "price": 3}
+      ]
+    }
+  }

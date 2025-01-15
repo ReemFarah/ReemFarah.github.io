@@ -1,0 +1,36 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": {
+      "text": "UK Productivity Growth (2000-2024)",
+      "subtitle": "Source: Office for National Statistics (ONS)"
+    },
+    "width": 600,
+    "height": 300,
+    "data": {
+      "values": [
+        {"Year": 2000, "ProductivityIndex": 80},
+        {"Year": 2005, "ProductivityIndex": 95},
+        {"Year": 2010, "ProductivityIndex": 100},
+        {"Year": 2015, "ProductivityIndex": 102},
+        {"Year": 2020, "ProductivityIndex": 103},
+        {"Year": 2024, "ProductivityIndex": 105}
+      ]
+    },
+    "mark": "line",
+    "encoding": {
+      "x": {"field": "Year", "type": "temporal", "title": "Year"},
+      "y": {"field": "ProductivityIndex", "type": "quantitative", "title": "Productivity Index (2000=100)"},
+      "tooltip": [
+        {"field": "Year", "type": "temporal", "title": "Year"},
+        {"field": "ProductivityIndex", "type": "quantitative", "title": "Productivity Index"}
+      ]
+    },
+    "config": {
+      "title": {
+        "subtitleFontSize": 12,
+        "subtitleFontStyle": "italic",
+        "subtitlePadding": 10
+      }
+    }
+  }
+  

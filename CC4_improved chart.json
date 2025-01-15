@@ -1,0 +1,56 @@
+{
+    "config": {"view": {"continuousWidth": 300, "continuousHeight": 300}},
+    "layer": [
+      {
+        "mark": {"type": "bar"},
+        "encoding": {
+          "color": {
+            "field": "Candidate",
+            "scale": {"scheme": "tableau10"},
+            "type": "nominal"
+          },
+          "x": {
+            "field": "Percentage",
+            "scale": {"domain": [0, 25]},
+            "title": "Support (%)",
+            "type": "quantitative"
+          },
+          "y": {
+            "field": "Candidate",
+            "sort": "-x",
+            "title": "Candidates",
+            "type": "nominal"
+          }
+        },
+        "title": {
+          "text": "Improved Candidate Support Chart",
+          "subtitle": "Enhanced visualization with clear labels and sorted data for better interpretation"
+        }
+      },
+      {
+        "mark": {"type": "text", "align": "left", "baseline": "middle", "dx": 3},
+        "encoding": {
+          "text": {
+            "field": "Percentage",
+            "format": ".1f",
+            "type": "quantitative"
+          },
+          "x": {"field": "Percentage", "type": "quantitative"},
+          "y": {"field": "Candidate", "sort": "-x", "type": "nominal"}
+        }
+      }
+    ],
+    "data": {"name": "data-e6f8f44cfa17f538b135b3be491207e3"},
+    "height": 400,
+    "width": 700,
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
+    "datasets": {
+      "data-e6f8f44cfa17f538b135b3be491207e3": [
+        {"Candidate": "YANG", "Percentage": 22.5, "Color": "#d0643f"},
+        {"Candidate": "BERNIE", "Percentage": 21, "Color": "#4f6d7a"},
+        {"Candidate": "BUTTIGIEG", "Percentage": 17.9, "Color": "#4f6d7a"},
+        {"Candidate": "BIDEN", "Percentage": 11.5, "Color": "#4f6d7a"},
+        {"Candidate": "WARREN", "Percentage": 9.6, "Color": "#4f6d7a"}
+      ]
+    }
+  }

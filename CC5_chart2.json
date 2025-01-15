@@ -1,0 +1,88 @@
+{
+    "config": {"view": {"continuousWidth": 300, "continuousHeight": 300}},
+    "data": {"name": "data-a690d4b6c1769d5f81c673c57dec94e3"},
+    "mark": {"type": "bar", "color": "dodgerblue"},
+    "encoding": {
+      "tooltip": [
+        {"field": "Location", "type": "nominal"},
+        {"field": "Population", "type": "quantitative"},
+        {"field": "Percentage_of_World", "type": "quantitative"}
+      ],
+      "x": {
+        "axis": {"labelAngle": 0},
+        "field": "Location",
+        "sort": "-y",
+        "title": "Country/Territory",
+        "type": "nominal"
+      },
+      "y": {"field": "Population", "title": "Population", "type": "quantitative"}
+    },
+    "height": 400,
+    "title": "Top 10 Most Populous Countries",
+    "width": 800,
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
+    "datasets": {
+      "data-a690d4b6c1769d5f81c673c57dec94e3": [
+        {
+          "Location": "China",
+          "Population": 1409670000,
+          "Percentage_of_World": 17.3,
+          "Date": "31 Dec 2023"
+        },
+        {
+          "Location": "India",
+          "Population": 1402737000,
+          "Percentage_of_World": 17.2,
+          "Date": "1 Jul 2024"
+        },
+        {
+          "Location": "United States",
+          "Population": 340110988,
+          "Percentage_of_World": 4.2,
+          "Date": "1 Jul 2024"
+        },
+        {
+          "Location": "Indonesia",
+          "Population": 282477584,
+          "Percentage_of_World": 3.5,
+          "Date": "30 Jun 2024"
+        },
+        {
+          "Location": "Pakistan",
+          "Population": 241499431,
+          "Percentage_of_World": 3,
+          "Date": "1 Mar 2023"
+        },
+        {
+          "Location": "Nigeria",
+          "Population": 223800000,
+          "Percentage_of_World": 2.7,
+          "Date": "1 Jul 2023"
+        },
+        {
+          "Location": "Brazil",
+          "Population": 212583750,
+          "Percentage_of_World": 2.6,
+          "Date": "1 Jul 2024"
+        },
+        {
+          "Location": "Bangladesh",
+          "Population": 169828911,
+          "Percentage_of_World": 2.1,
+          "Date": "14 Jun 2022"
+        },
+        {
+          "Location": "Russia",
+          "Population": 146150789,
+          "Percentage_of_World": 1.8,
+          "Date": "1 Jan 2024"
+        },
+        {
+          "Location": "Mexico",
+          "Population": 130154247,
+          "Percentage_of_World": 1.6,
+          "Date": "30 Sep 2024"
+        }
+      ]
+    }
+  }

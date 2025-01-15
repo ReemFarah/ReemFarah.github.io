@@ -1,0 +1,66 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 500,
+  "height": 250,
+  "data": {
+    "url": "https://raw.githubusercontent.com/ReemFarah/ReemFarah.github.io/refs/heads/main/Brasil.json",
+    "format": {"property": "features"}
+  },
+  "transform": [
+    {
+      "lookup": "properties.UF",
+      "from": {
+        "data": {
+          "values": [
+            {"UF": "SP", "population": 46289333},
+            {"UF": "MG", "population": 21292666},
+            {"UF": "RJ", "population": 17366189},
+            {"UF": "BA", "population": 14812617},
+            {"UF": "RS", "population": 11422973},
+            {"UF": "PR", "population": 11516840},
+            {"UF": "PE", "population": 9616621},
+            {"UF": "CE", "population": 9240580},
+            {"UF": "PA", "population": 8690745},
+            {"UF": "SC", "population": 7252502},
+            {"UF": "MA", "population": 7153265},
+            {"UF": "GO", "population": 7113540},
+            {"UF": "AM", "population": 4283974},
+            {"UF": "ES", "population": 4064052},
+            {"UF": "PB", "population": 4039277},
+            {"UF": "RN", "population": 3534165},
+            {"UF": "MT", "population": 3526220},
+            {"UF": "AL", "population": 3351543},
+            {"UF": "PI", "population": 3281480},
+            {"UF": "DF", "population": 3055149},
+            {"UF": "MS", "population": 2809394},
+            {"UF": "SE", "population": 2338474},
+            {"UF": "RO", "population": 1815278},
+            {"UF": "TO", "population": 1572866},
+            {"UF": "AC", "population": 906876},
+            {"UF": "AP", "population": 861773},
+            {"UF": "RR", "population": 652713}
+          ]
+        },
+        "key": "UF",
+        "fields": ["population"]
+      }
+    }
+  ],
+  "mark": {
+    "type": "geoshape",
+    "stroke": "white",
+    "strokeWidth": 0.5
+  },
+  "encoding": {
+    "color": {
+      "field": "population",
+      "type": "quantitative",
+      "title": "Population",
+      "scale": {"scheme": "reds"}
+    },
+    "tooltip": [
+      {"field": "properties.ESTADO", "type": "nominal", "title": "State Name"},
+      {"field": "population", "type": "quantitative", "title": "Population"}
+    ]
+  }
+}

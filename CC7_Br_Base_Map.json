@@ -1,0 +1,23 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": 500,
+    "height": 250,
+    "data": {
+      "url": "https://raw.githubusercontent.com/ReemFarah/ReemFarah.github.io/refs/heads/main/Brasil.json",
+      "format": {"property": "features"}
+    },
+    "mark": {
+      "type": "geoshape",
+      "stroke": "white",
+      "strokeWidth": 0.5,
+      "fill": "#4682B4"  
+    },
+    "encoding": {
+      "tooltip": [
+        {"field": "properties.ESTADO", "type": "nominal", "title": "State Name"},
+        {"field": "properties.REGIAO", "type": "nominal", "title": "Region"}
+      ]
+    }
+  }
+  
+  

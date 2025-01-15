@@ -1,178 +1,230 @@
- 
-
 <!DOCTYPE html>
-<html> 
-    <!-- HTML is heirarchial: tags like this define elements on the page. 
-    Each tag does something different. For example:
-        - The <html> tag defines the whole document.
-        - The <h1> tag defines a large heading
-        - The <p> tag defines a paragraph
-        - Tags appear as an opening <div> and closing </div> pair
-    -->
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="index.css">
+        <title>Can Technological Advancement Lead to Financial Inclusion in Kenya?</title>
+    </head>
+    <body>
+        <h1 style="text-align: center; margin-top: 20px;">Can Technological Advancement Lead to Financial Inclusion in Kenya?</h1>
+    </body>
+    
+        <!-- Vega and Vega-Lite Libraries -->
+        <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+    
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: #f9f9f9;
+                color: #333;
+            }
+            h1, h2, h3 {
+                text-align: center;
+                color: #8B0000; /* Brick red for headings */
+            }
+            a {
+                color: #8B0000; /* Brick red for links */
+                text-decoration: none;
+            }
+            a:hover {
+                text-decoration: underline;
+            }
+            .chart-container {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: flex-start;
+                gap: 20px;
+                max-width: 100%; /* Ensures charts use full available width */
+                margin: 0 auto; /* Center container */
+                padding: 0; /* Remove any padding */
+            }
+            section {
+                padding: 0 20px; /* Add consistent padding to sections */
+                margin: 0 auto; /* Center section content */
+            }
+            figure {
+                width: auto; /* Remove fixed width */
+                height: auto; /* Ensure the figure adjusts to content */
+                margin: 0; /* Remove extra margin */
+                border: none; /* Remove border */
+                padding: 0; /* Remove padding */
+                box-shadow: none; /* Remove shadow effect */
+                display: inline-block; /* Ensure figure only wraps the chart */
+            }
+            img {
+                max-width: 300px; /* Limit the width of the image */
+                height: auto; /* Maintain aspect ratio */
+                border: 1px solid #ddd;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+                display: block; /* Ensure it behaves like a block element */
+                margin: 0 auto; /* Center the image horizontally */
+            }
+            .link-container {
+                text-align: center;
+                margin-top: 10px;
+            }
+        </style>
+    </head>
+    
+    
+<head>
+ 
+<body>
+    <h1></h1>
+    <p style="text-align: center;">Tech-Driven Inclusion: Understanding Financial Access in Kenya</p>
 
-<head>    
-    <!-- The head tag links to resources our page needs and defines information about it. Tags in the <head> aren't displayed on the page. -->
 
-    <!-- This is a link to a stylesheet which contains rules about how each element on the page should be defined-->
-    <!-- Try swapping example1.css to another, and take a look at example1.css to see if you understand it-->
-    <link rel="stylesheet" type="text/css" href="index.css">
-    <title>Reem's Project</title> <!-- The title displayed in the browser tab, not on the page itself -->
+   <!-- Section 1 -->
+   <section>
+    <div class="chart-description">
+        <h2>Aim of the Project</h2>
+        <p style="text-align: center;">
+          This project investigates the intersection of technology and financial inclusion in Kenya, focusing on three key questions:
+          1.	How does mobile phone ownership correlate with access to digital payment systems?
+          2.	What impact does internet access have on financial inclusion, specifically regarding mobile money usage?
+          3.	In what ways does urbanicity influence the adoption of digital financial services?
+          Using both static and interactive visualizations, the project seeks to illustrate the role of technological advancement as a catalyst for financial inclusion. By analysing disparities across urban and rural regions, the research highlights key challenges and opportunities for enhancing access to financial services. These insights aim to inform policies aimed at reducing inequalities and fostering inclusive growth in Kenya. The project emphasizes accessibility and replicability, making the findings valuable for stakeholders such as policymakers, financial institutions, and researchers.
+          </p>
+    </div>
+</section>
 
-    <!-- This is a link to the vega-lite which we're using to make graphs -->
-    <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
 
-    <style>
-        #chartGrid {
-            display: flex;
-        }
-        
-    </style>
-</head>
-
-<body> 
-<!-- The body tag contains the elements that visitors to our page will see. -->
-    <h1 class="big" style="margin-bottom: 0px;"> <!-- We have added a class to the header called "big" which we can use to style it in the CSS -->
-        <!-- This is a header, it is the largest text on the page -->
-        Can Technological Advancement Lead to Financial Inclusion in Kenya?
-    </h1>
-    <p style="margin-top: 0px; color: darkblue">
-        <!-- we're setting the margin to 0px so the header and authour name are close together -->
-        Data Insights on Technology and Financial Inclusion in Kenya
-    </p>
-    <h3 class="small"> <!-- We have added a class to the header called "small" which we can use to style it in the CSS -->
-        This page acts as your portfolio of charts. You can use it as a good starting point to display your work but make sure to customise it to make it your own, or even start from scratch.  
-    </h3>
-
-    <!-- We're organising the page into sections, with each section containing a chart, title and a description -->
+    <!-- Section 2 -->
     <section>
         <div class="chart-description">
-            <h2>Section 1: A basic chart</h2>
-            <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
-                We've organised the page into sections, with each section containing a chart, title and a description. Here, we can describe the chart and give some context.
-                As a first example, we're using a basic chart from our repo.
-            </p>
+            <h2>Analysis</h2>
+            <p style="text-align: center;">Below are charts to answer my 3 main reserach questions</p>
+        
+          </div>
+        <div class="chart-container">
+          <p style="text-align: center;"></p>Does mobile phone ownership correlate with access to digital payments in Kenya?</p>
+            <figure id="Location1"></figure>
+            <p style="text-align: center;"></p>These charts strongly support the hypothesis that technological advancements like mobile phone ownership are critical enablers of financial inclusion in Kenya. Mobile phones not only facilitate financial transactions but also increase access to mobile money accounts, a key component of digital financial services.</p>
+          </div>
+          
+          <div class="chart-container">
+            <div class="chart-description"></div>  
+            <p style="text-align: center;"></p>How does internet access influence financial inclusion, such as having a financial or mobile money account?</p>
+              <figure id="Location2"></figure>
+            <p style="text-align: center;"></p>General Interpretation: These charts collectively show that internet access is a key enabler of financial inclusion, facilitating both: Account Ownership: Access to financial accounts through online banking or financial apps. Digital Payment Usage: Increased adoption of digital payments through internet-enabled devices.</p>
+          </div>
+          
+          <div class="chart-container">
+            <p style="text-align: center;"></p>What role does urbanicity play in the adoption of digital payments and financial inclusion in Kenya?</p>
+            <figure id="Location3"></figure>
+            <p style="text-align: center;"></p>Urban residents have higher digital payment usage and account ownership than rural residents, highlighting disparities in financial inclusion and access to financial technology between urban and rural areas.</p>
+          </div>
+          
+          <div class="chart-container">
+            <figure id="Location4"></figure>
+            <p style="text-align: center;"></p>This correlation heatmap shows the relationships between mobile ownership, internet access, financial accounts, and digital payments in Kenya. Mobile ownership and internet access positively influence financial inclusion metrics.</p>
         </div>
-        <figure id="Location1"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
+
+        <div class="chart-container">
+          <figure id="Location5"></figure>
+          <p style="text-align: center;"></p>This chart illustrated that these trends support the main question, showing technological growth, via mobile subscriptions, internet access, and mobile money accounts which directly correlates with increased financial inclusion in Kenya over time.</p>
+      </div>
+
     </section>
 
-    <section></section>
+      <!-- Section 3 -->
+      <section>
         <div class="chart-description">
-            <h2>Section 2: Declining Population Chart</h2>
-            <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
-                We've organised the page into sections, with each section containing a chart, title and a description. Here, we can describe the chart and give some context.
-                As a first example, we're using a basic chart from our repo.
-            </p>
+            <h2>Data Used</h2>
+            <p style="text-align: center;">
+              This project leverages multiple datasets to explore the relationship between technological advancement and financial inclusion in Kenya. The primary sources include:
+              1.	Kenya Financial Inclusion Survey (World Bank Microdata): This dataset provides detailed demographic and financial inclusion metrics, such as mobile money usage, access to digital payments, and financial account ownership. It serves as the foundation for analyzing financial behaviors and disparities across different population segments.
+              2.	World Bank API Data: This API was used to access dynamic, time-series data on key technological indicators in Kenya, including:
+              o	Internet Users (IT.NET.USER.ZS): Tracks the percentage of internet users in Kenya.
+              o	Mobile Cellular Subscriptions (IT.CEL.SETS): Measures the total number of mobile phone subscriptions.
+              o	Mobile Money Accounts (FX.OWN.TOTL.ZS): Provides insights into the adoption of mobile money accounts, a critical component of financial inclusion.
+              The datasets were retrieved and processed using Python, ensuring replicability and automation. Merging these sources allowed for a comprehensive analysis of how technology drives financial inclusion. Data visualization using Altair highlighted trends, disparities, and correlations across urban and rural contexts, providing actionable insights.
+            </p>  
         </div>
-        <figure id="Location2"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
     </section>
 
-    <section></section>
+
+      <!-- Section 4 -->
+      <section>
         <div class="chart-description">
-            <h2>Section 3: UK Productivity 1960-2023 Chart</h2>
-            <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
-                We've organised the page into sections, with each section containing a chart, title and a description. Here, we can describe the chart and give some context.
-                As a first example, we're using a basic chart from our repo.
+            <h2>Challenges and Tools Used</h2>
+            <p style="text-align: center;">
+              The project faced several challenges during data preparation, integration, and analysis, primarily due to the complexities of working with datasets from diverse sources. Key challenges included:
+              1.	Data Structure Variability: The datasets obtained from the World Bank API and the Kenya Financial Inclusion Survey had different formats and structures. Time-series data from the API required transformation to match demographic indicators from survey data.
+              2.	Missing and Inconsistent Data: Missing values in critical variables such as mobile money account adoption rates and internet usage created gaps in the analysis. Inconsistent recording of urbanicity data across datasets further complicated merging processes.
+              3.	Data Cleaning and Preprocessing: Substantial effort was required to ensure accurate alignment between datasets. This included dealing with duplicate entries, harmonizing column names, and addressing non-standardized formats.
+              4.	Visualisation Complexity: Designing visualizations that clearly communicated trends while accommodating interactive elements was challenging, especially when comparing urban and rural data trends.
+              To overcome these challenges, several tools were employed:
+              •	Pandas: For cleaning, preprocessing, and integrating datasets into a unified structure.
+              •	Altair: To create static and interactive visualizations that were both insightful and accessible.
+              •	World Bank API: For automating data collection, ensuring up-to-date and replicable workflows.
+              By addressing these challenges systematically, the project established a replicable framework that supports ongoing analysis of financial inclusion in Kenya
+              </p>
+        </div> 
+    </section>
+
+
+      <!-- Section 5 -->
+      <section>
+        <div class="chart-description">
+            <h2>Conclusion</h2>
+            <p style="text-align: center;">
+              The findings reveal that technological advancements are pivotal to enhancing financial inclusion in Kenya:
+              1.	Mobile phone ownership exhibits a strong correlation with digital payment adoption, underscoring its role in bridging financial gaps.
+              2.	Internet access emerges as a critical factor enabling mobile money usage and expanding financial account accessibility.
+              3.	Urbanicity significantly influences financial inclusion, with urban areas showing higher adoption rates of digital payments. However, disparities persist, particularly in rural regions.
+              These conclusions emphasise the necessity of expanding technological infrastructure, such as internet coverage and mobile networks, in underserved areas. By addressing these gaps, Kenya can further promote equitable financial access, fostering inclusive economic development. The project's insights invite further exploration into targeted interventions for enhancing financial inclusion in low-access regions.
             </p>
         </div>
-        <figure id="Location3"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
     </section>
-    <section></section>
-    <div class="chart-description">
-        <h2>Section 4: Inflation-Four G7 Countries Chart</h2>
-        <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
-            We've organised the page into sections, with each section containing a chart, title and a description. Here, we can describe the chart and give some context.
-            As a first example, we're using a basic chart from our repo.
-        </p>
-    </div>
-    <figure id="Location4"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
-</section>
-</section>
-<section></section>
-<div class="chart-description">
-    <h2>Section 5: China Electricity Chart</h2>
-    <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
-        We've organised the page into sections, with each section containing a chart, title and a description. Here, we can describe the chart and give some context.
-        As a first example, we're using a basic chart from our repo.
-    </p>
-</div>
-<figure id="Location5"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
-</section>
-</section>
-<section></section>
-<div class="chart-description">
-    <h2>Section 6: USA Electricity Chart</h2>
-    <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
-        We've organised the page into sections, with each section containing a chart, title and a description. Here, we can describe the chart and give some context.
-        As a first example, we're using a basic chart from our repo.
-    </p>
-</div>
-<figure id="Location6"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
-</section>
-<section></section>
-<div class="chart-description">
-    <h2>Section 7: Vice Spending</h2>
-    <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
-        We've organised the page into sections, with each section containing a chart, title and a description. Here, we can describe the chart and give some context.
-        As a first example, we're using a basic chart from our repo.
-    </p>
-</div>
-<figure id="Location7"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
-</section>
-    </section>
-<section></section>
-<div class="chart-description">
-    <h2>Section 8: Iowa Poll</h2>
-    <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
-        We've organised the page into sections, with each section containing a chart, title and a description. Here, we can describe the chart and give some context.
-        As a first example, we're using a basic chart from our repo.
-    </p>
-    <div style="width: 300px;">
-   <img src= "https://github.com/ReemFarah/ReemFarah.github.io/blob/main/Bad_Graph.png?raw=true" alt="A bad graph showing cadidate Yang leading the polls" style="width: 100%; height: auto;">>
-</div>
-<figure id="Location8"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
-</section>
-    <!-- Do you want to add more sections? -->
-        <!-- Try copying pasting the section above -->
-        <!-- You'll need to change the id of the figure "<figure id="Location3"... -->
-        <!-- ... and add a new variable for the graph spec in the script at the bottom of the page -->
 
-
-    <!-- This is a script, it's a way to run JavaScript code on the page -->
-    <script>
-        // This is a comment in JavaScript - it's a different language to HTML and CSS
-
-        let figure_1_spec = "https://raw.githubusercontent.com/EconomicsObservatory/courses/main/2/s2_chart2.json"; // We're storing the URL of the graph we want to display in a variable
-        let figure_2_spec = "W1-CHARTS.JSON"
-        let figure_3_spec = "W1-Chart2.json"
-        let figure_4_spec = "W1-Chart3.json"
-        let figure_5_spec = "wk2_chart1.json"
-        let figure_6_spec = "wk2_chart2.json"
-        let figure_7_spec = "vice_spending.json"
-        let figure_8_spec = "Bad_Graph.json"
+          <!-- Section 6 -->
+          <section>
+            <div class="chart-description">
+                <h2>References</h2>
+                <p style="text-align: center;"> 
+                  -	Kenya National Bureau of Statistics (KNBS), 2024. FinAccess Household Survey Report. [online] Available at: https://www.knbs.or.ke/reports/2024-finacess-household-survey-report/
+                  -	Central Bank of Kenya (CBK), 2024. Financial Inclusion Datasets. [online] Available at: https://www.centralbank.go.ke/financial-inclusion-datasets/
+                  -	World Bank, 2025. Kenya - Financial Inclusion and Capability Survey 2021. [online] Available at: https://microdata.worldbank.org/index.php/catalog/4664/get-microdata
+                  -	World Bank, 2025. Mobile Cellular Subscriptions (Kenya). [API data]. Retrieved from: http://api.worldbank.org/v2/country/KEN/indicator/IT.CEL.SETS?format=json
+                  -	World Bank, 2025. Internet Users in Kenya. [API data]. Retrieved from: http://api.worldbank.org/v2/country/KEN/indicator/IT.NET.USER.ZS?format=json
+                  -	World Bank, 2025. Mobile Money Accounts in Kenya. [API data]. Retrieved from: http://api.worldbank.org/v2/country/KEN/indicator/FX.OWN.TOTL.ZS?format=json
+                </p>   
+                <div style="text-align: center; margin-top: 10px; font-size: 16px; line-height: 1.5;">
+                  <a href="https://colab.research.google.com/drive/1r2fzU_G2UP_54lyEMkyqIeCFC97AYiO_?usp=sharing" target="_blank">View Project's Colab Notebook</a>
+                  <span style="display: inline-block; margin: 0 15px; color: #aaa;">|</span>
+                  <a href="https://colab.research.google.com/drive/1Ggu8RHcT74HrduZOGbBhXJ9qYNxaJLX4?usp=sharing" target="_blank">View Project's World Bank API Notebook</a>
+              </div>
+              
+              
             
-                                                                               // You should have a spec for a graph in this same folder. Just specify its name here, e.g. let figure_1_spec = "chart1.json"
+        </section>
 
-        vegaEmbed('#Location1', figure_1_spec) // We're using the vegaEmbed function to put a graph in the element with id figure_1
-        vegaEmbed('#Location2', figure_2_spec) // We're using the vegaEmbed function to put a graph in the element with id figure_1
-        vegaEmbed('#Location3', figure_3_spec)
-        vegaEmbed('#Location4', figure_4_spec)
-        vegaEmbed('#Location5', figure_5_spec)
-        vegaEmbed('#Location6', figure_6_spec)
-        vegaEmbed('#Location7', figure_7_spec)
-        vegaEmbed('#Location8', figure_8_spec)
+       
+  
 
-        // Do you want to add more graphs?
-        // try defining a new variable for figure_3_spec, adding VegaEmbed for Location3, and adding a new section in the HTML
-        // e.g. 
-        // let figure_3_spec = ...
-        // vegaEmbed('#Location3', figure_3_spec)
 
+    <!-- Vega Embed Script -->
+    <script>
+        let figure_1_spec = "Project_chart1.json";
+        let figure_2_spec = "Project_chart2.json";
+        let figure_3_spec = "Project_chart3.json";
+        let figure_4_spec = "Project_chart4.json";
+        let figure_5_spec = "Project_chart5.json";
+      
+
+        // Embedding the charts
+        vegaEmbed('#Location1', figure_1_spec);
+        vegaEmbed('#Location2', figure_2_spec);
+        vegaEmbed('#Location3', figure_3_spec);
+        vegaEmbed('#Location4', figure_4_spec);
+        vegaEmbed('#Location5', figure_5_spec);
+     
 
     </script>
-
 </body>
-    
 </html>
-

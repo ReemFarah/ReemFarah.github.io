@@ -1,0 +1,469 @@
+{
+    "config": {"view": {"continuousWidth": 300, "continuousHeight": 300}},
+    "data": {"name": "data-31cc627f2128c21fcffa221994e2ea76"},
+    "mark": {"type": "line", "point": true},
+    "encoding": {
+      "color": {"field": "Indicator", "legend": null, "type": "nominal"},
+      "tooltip": [
+        {"field": "date", "title": "Year", "type": "ordinal"},
+        {"field": "value", "title": "Value", "type": "quantitative"},
+        {"field": "Indicator", "title": "Indicator", "type": "nominal"}
+      ],
+      "x": {"field": "date", "title": "Year", "type": "ordinal"},
+      "y": {"field": "value", "title": "Value", "type": "quantitative"}
+    },
+    "height": 400,
+    "params": [
+      {
+        "name": "param_35",
+        "select": {"type": "point", "fields": ["Indicator"]},
+        "bind": {
+          "input": "select",
+          "options": [
+            "Mobile Supscriptions (Millions)",
+            "Internet Users (% of Population)",
+            "Mobile Money Accounts (% of Adults)"
+          ],
+          "name": "Select Indicator: "
+        }
+      }
+    ],
+    "title": "Technological Growth and Digital Financial Inclusion in Kenya",
+    "transform": [{"filter": {"param": "param_35"}}],
+    "width": 700,
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
+    "datasets": {
+      "data-31cc627f2128c21fcffa221994e2ea76": [
+        {
+          "date": 2023,
+          "value": 66700000,
+          "Indicator": "Mobile Supscriptions (Millions)"
+        },
+        {
+          "date": 2022,
+          "value": 65700000,
+          "Indicator": "Mobile Supscriptions (Millions)"
+        },
+        {
+          "date": 2021,
+          "value": 65100000,
+          "Indicator": "Mobile Supscriptions (Millions)"
+        },
+        {
+          "date": 2020,
+          "value": 61400000,
+          "Indicator": "Mobile Supscriptions (Millions)"
+        },
+        {
+          "date": 2019,
+          "value": 54600000,
+          "Indicator": "Mobile Supscriptions (Millions)"
+        },
+        {
+          "date": 2018,
+          "value": 49500000,
+          "Indicator": "Mobile Supscriptions (Millions)"
+        },
+        {
+          "date": 2017,
+          "value": 42800000,
+          "Indicator": "Mobile Supscriptions (Millions)"
+        },
+        {
+          "date": 2016,
+          "value": 39000000,
+          "Indicator": "Mobile Supscriptions (Millions)"
+        },
+        {
+          "date": 2015,
+          "value": 37700000,
+          "Indicator": "Mobile Supscriptions (Millions)"
+        },
+        {
+          "date": 2014,
+          "value": 33600000,
+          "Indicator": "Mobile Supscriptions (Millions)"
+        },
+        {
+          "date": 2013,
+          "value": 31800000,
+          "Indicator": "Mobile Supscriptions (Millions)"
+        },
+        {
+          "date": 2012,
+          "value": 30700000,
+          "Indicator": "Mobile Supscriptions (Millions)"
+        },
+        {
+          "date": 2011,
+          "value": 28100000,
+          "Indicator": "Mobile Supscriptions (Millions)"
+        },
+        {
+          "date": 2010,
+          "value": 25000000,
+          "Indicator": "Mobile Supscriptions (Millions)"
+        },
+        {
+          "date": 2009,
+          "value": 19400000,
+          "Indicator": "Mobile Supscriptions (Millions)"
+        },
+        {
+          "date": 2008,
+          "value": 16300000,
+          "Indicator": "Mobile Supscriptions (Millions)"
+        },
+        {
+          "date": 2007,
+          "value": 11300000,
+          "Indicator": "Mobile Supscriptions (Millions)"
+        },
+        {
+          "date": 2006,
+          "value": 7340000,
+          "Indicator": "Mobile Supscriptions (Millions)"
+        },
+        {
+          "date": 2005,
+          "value": 4610000,
+          "Indicator": "Mobile Supscriptions (Millions)"
+        },
+        {
+          "date": 2004,
+          "value": 2550000,
+          "Indicator": "Mobile Supscriptions (Millions)"
+        },
+        {
+          "date": 2003,
+          "value": 1590000,
+          "Indicator": "Mobile Supscriptions (Millions)"
+        },
+        {
+          "date": 2002,
+          "value": 1190000,
+          "Indicator": "Mobile Supscriptions (Millions)"
+        },
+        {
+          "date": 2001,
+          "value": 600000,
+          "Indicator": "Mobile Supscriptions (Millions)"
+        },
+        {
+          "date": 2000,
+          "value": 127404,
+          "Indicator": "Mobile Supscriptions (Millions)"
+        },
+        {
+          "date": 1999,
+          "value": 23757,
+          "Indicator": "Mobile Supscriptions (Millions)"
+        },
+        {
+          "date": 1998,
+          "value": 10756,
+          "Indicator": "Mobile Supscriptions (Millions)"
+        },
+        {
+          "date": 1997,
+          "value": 6767,
+          "Indicator": "Mobile Supscriptions (Millions)"
+        },
+        {
+          "date": 1996,
+          "value": 2826,
+          "Indicator": "Mobile Supscriptions (Millions)"
+        },
+        {
+          "date": 1995,
+          "value": 2279,
+          "Indicator": "Mobile Supscriptions (Millions)"
+        },
+        {
+          "date": 1994,
+          "value": 1990,
+          "Indicator": "Mobile Supscriptions (Millions)"
+        },
+        {
+          "date": 1993,
+          "value": 1162,
+          "Indicator": "Mobile Supscriptions (Millions)"
+        },
+        {
+          "date": 1992,
+          "value": 1100,
+          "Indicator": "Mobile Supscriptions (Millions)"
+        },
+        {
+          "date": 1991,
+          "value": 0,
+          "Indicator": "Mobile Supscriptions (Millions)"
+        },
+        {
+          "date": 1990,
+          "value": 0,
+          "Indicator": "Mobile Supscriptions (Millions)"
+        },
+        {
+          "date": 1989,
+          "value": 0,
+          "Indicator": "Mobile Supscriptions (Millions)"
+        },
+        {
+          "date": 1988,
+          "value": 0,
+          "Indicator": "Mobile Supscriptions (Millions)"
+        },
+        {
+          "date": 1987,
+          "value": 0,
+          "Indicator": "Mobile Supscriptions (Millions)"
+        },
+        {
+          "date": 1986,
+          "value": 0,
+          "Indicator": "Mobile Supscriptions (Millions)"
+        },
+        {
+          "date": 1985,
+          "value": 0,
+          "Indicator": "Mobile Supscriptions (Millions)"
+        },
+        {
+          "date": 1984,
+          "value": 0,
+          "Indicator": "Mobile Supscriptions (Millions)"
+        },
+        {
+          "date": 1983,
+          "value": 0,
+          "Indicator": "Mobile Supscriptions (Millions)"
+        },
+        {
+          "date": 1982,
+          "value": 0,
+          "Indicator": "Mobile Supscriptions (Millions)"
+        },
+        {
+          "date": 1981,
+          "value": 0,
+          "Indicator": "Mobile Supscriptions (Millions)"
+        },
+        {
+          "date": 1980,
+          "value": 0,
+          "Indicator": "Mobile Supscriptions (Millions)"
+        },
+        {
+          "date": 1979,
+          "value": 0,
+          "Indicator": "Mobile Supscriptions (Millions)"
+        },
+        {
+          "date": 1978,
+          "value": 0,
+          "Indicator": "Mobile Supscriptions (Millions)"
+        },
+        {
+          "date": 1977,
+          "value": 0,
+          "Indicator": "Mobile Supscriptions (Millions)"
+        },
+        {
+          "date": 1976,
+          "value": 0,
+          "Indicator": "Mobile Supscriptions (Millions)"
+        },
+        {
+          "date": 1975,
+          "value": 0,
+          "Indicator": "Mobile Supscriptions (Millions)"
+        },
+        {
+          "date": 2022,
+          "value": 40.8137,
+          "Indicator": "Internet Users (% of Population)"
+        },
+        {
+          "date": 2021,
+          "value": 38.2459,
+          "Indicator": "Internet Users (% of Population)"
+        },
+        {
+          "date": 2020,
+          "value": 27.5774,
+          "Indicator": "Internet Users (% of Population)"
+        },
+        {
+          "date": 2019,
+          "value": 22.6688,
+          "Indicator": "Internet Users (% of Population)"
+        },
+        {
+          "date": 2018,
+          "value": 19.5,
+          "Indicator": "Internet Users (% of Population)"
+        },
+        {
+          "date": 2017,
+          "value": 17.8271,
+          "Indicator": "Internet Users (% of Population)"
+        },
+        {
+          "date": 2016,
+          "value": 16.6,
+          "Indicator": "Internet Users (% of Population)"
+        },
+        {
+          "date": 2015,
+          "value": 16.5879,
+          "Indicator": "Internet Users (% of Population)"
+        },
+        {
+          "date": 2014,
+          "value": 16.5,
+          "Indicator": "Internet Users (% of Population)"
+        },
+        {
+          "date": 2013,
+          "value": 13,
+          "Indicator": "Internet Users (% of Population)"
+        },
+        {
+          "date": 2012,
+          "value": 10.5,
+          "Indicator": "Internet Users (% of Population)"
+        },
+        {
+          "date": 2011,
+          "value": 8.8,
+          "Indicator": "Internet Users (% of Population)"
+        },
+        {
+          "date": 2010,
+          "value": 7.2,
+          "Indicator": "Internet Users (% of Population)"
+        },
+        {
+          "date": 2009,
+          "value": 6.1,
+          "Indicator": "Internet Users (% of Population)"
+        },
+        {
+          "date": 2008,
+          "value": 5.2,
+          "Indicator": "Internet Users (% of Population)"
+        },
+        {
+          "date": 2007,
+          "value": 4.4,
+          "Indicator": "Internet Users (% of Population)"
+        },
+        {
+          "date": 2006,
+          "value": 3.6,
+          "Indicator": "Internet Users (% of Population)"
+        },
+        {
+          "date": 2005,
+          "value": 3.1019,
+          "Indicator": "Internet Users (% of Population)"
+        },
+        {
+          "date": 2004,
+          "value": 3.02353,
+          "Indicator": "Internet Users (% of Population)"
+        },
+        {
+          "date": 2003,
+          "value": 2.9419,
+          "Indicator": "Internet Users (% of Population)"
+        },
+        {
+          "date": 2002,
+          "value": 1.20777,
+          "Indicator": "Internet Users (% of Population)"
+        },
+        {
+          "date": 2001,
+          "value": 0.619782,
+          "Indicator": "Internet Users (% of Population)"
+        },
+        {
+          "date": 2000,
+          "value": 0.31806,
+          "Indicator": "Internet Users (% of Population)"
+        },
+        {
+          "date": 1999,
+          "value": 0.114256028,
+          "Indicator": "Internet Users (% of Population)"
+        },
+        {
+          "date": 1998,
+          "value": 0.050261388,
+          "Indicator": "Internet Users (% of Population)"
+        },
+        {
+          "date": 1997,
+          "value": 0.034406051,
+          "Indicator": "Internet Users (% of Population)"
+        },
+        {
+          "date": 1996,
+          "value": 0.008839115,
+          "Indicator": "Internet Users (% of Population)"
+        },
+        {
+          "date": 1995,
+          "value": 0.000727482,
+          "Indicator": "Internet Users (% of Population)"
+        },
+        {
+          "date": 1994,
+          "value": 0,
+          "Indicator": "Internet Users (% of Population)"
+        },
+        {
+          "date": 1993,
+          "value": 0,
+          "Indicator": "Internet Users (% of Population)"
+        },
+        {
+          "date": 1992,
+          "value": 0,
+          "Indicator": "Internet Users (% of Population)"
+        },
+        {
+          "date": 1991,
+          "value": 0,
+          "Indicator": "Internet Users (% of Population)"
+        },
+        {
+          "date": 1990,
+          "value": 0,
+          "Indicator": "Internet Users (% of Population)"
+        },
+        {
+          "date": 2021,
+          "value": 79.2,
+          "Indicator": "Mobile Money Accounts (% of Adults)"
+        },
+        {
+          "date": 2017,
+          "value": 81.57,
+          "Indicator": "Mobile Money Accounts (% of Adults)"
+        },
+        {
+          "date": 2014,
+          "value": 74.66,
+          "Indicator": "Mobile Money Accounts (% of Adults)"
+        },
+        {
+          "date": 2011,
+          "value": 42.34,
+          "Indicator": "Mobile Money Accounts (% of Adults)"
+        }
+      ]
+    }
+  }

@@ -1,74 +1,49 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" type="text/css" href="index.css">
-        <title>Reem's Portfolio</title>
-    
-        <!-- Vega and Vega-Lite Libraries -->
-        <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
-        <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
-        <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
-    
-        <style>
-            body {
-                font-family: Arial, sans-serif;
-                margin: 0;
-                padding: 0;
-                background-color: #f9f9f9;
-                color: #333;
-            }
-            h1, h2, h3 {
-                text-align: center;
-                color: #8B0000; /* Brick red for headings */
-            }
-            a {
-                color: #8B0000; /* Brick red for links */
-                text-decoration: none;
-            }
-            a:hover {
-                text-decoration: underline;
-            }
-            .chart-container {
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: center;
-                align-items: flex-start;
-                gap: 20px;
-                max-width: 100%; /* Ensures charts use full available width */
-                margin: 0 auto; /* Center container */
-                padding: 0; /* Remove any padding */
-            }
-            section {
-                padding: 0 20px; /* Add consistent padding to sections */
-                margin: 0 auto; /* Center section content */
-            }
-            figure {
-                width: auto; /* Remove fixed width */
-                height: auto; /* Ensure the figure adjusts to content */
-                margin: 0; /* Remove extra margin */
-                border: none; /* Remove border */
-                padding: 0; /* Remove padding */
-                box-shadow: none; /* Remove shadow effect */
-                display: inline-block; /* Ensure figure only wraps the chart */
-            }
-            img {
-                max-width: 300px; /* Limit the width of the image */
-                height: auto; /* Maintain aspect ratio */
-                border: 1px solid #ddd;
-                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-                display: block; /* Ensure it behaves like a block element */
-                margin: 0 auto; /* Center the image horizontally */
-            }
-            .link-container {
-                text-align: center;
-                margin-top: 10px;
-            }
-        </style>
-    </head>
-    
-    
 <head>
- 
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <title>Reem's Portfolio</title>
+
+    <!-- Vega and Vega-Lite Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1, h2, h3 {
+            text-align: center;
+        }
+        .chart-description {
+            margin-bottom: 20px;
+        }
+        .chart-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        figure {
+            width: 45%; /* Ensures all charts are the same width */
+            height: auto;
+            border: 1px solid #ddd;
+            padding: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        img {
+            max-width: 300px; /* Limit the width of the image */
+            height: auto; /* Maintain aspect ratio */
+            border: 1px solid #ddd;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            display: block; /* Ensure it behaves like a block element */
+            margin: 0 auto; /* Center the image horizontally */
+        }
+    </style>
+</head>
+
 <body>
     <h1>Portfolio Coding Challenges</h1>
     <p style="text-align: center;">This page showcases my portfolio of tasks.</p>
@@ -145,11 +120,6 @@
             <figure id="Location12"></figure>
             <p style="text-align: center;"></p>These charts highlight the population distribution of countries globally, providing insights into demographic patterns with the top ten populous nations clearly visualised.</p>
         </div>
-        <div style="text-align: center; margin-top: 10px;">
-            <a href="https://colab.research.google.com/drive/1GIFF08Z68nRAqAzO5-WjySsh_T5MvaKL?usp=sharing" target="_blank">View CC5 Colab Notebook</a>
-        </div>
-        
-        
     </section>
 
 
@@ -163,10 +133,6 @@
             <figure id="Location13"></figure>
             <p style="text-align: center;"></p>Technological advancements, particularly in mobile data and internet accessibility, directly drive financial inclusion by enabling mobile money platforms and digital financial services in Kenya.</p>
         </div>
-        <div style="text-align: center; margin-top: 10px;">
-            <a href="https://colab.research.google.com/drive/14ED1wR8QVMU5YF4jpPkbbKEPQJvvxHiO?usp=sharing" target="_blank">View CC6 Colab Notebook</a>
-        </div>
-        
     </section>
 
     <!-- Section CC7 -->
@@ -181,8 +147,8 @@
             <p style="text-align: center;"></p>The map highlights Brazil’s 10 most populous cities, with point size proportional to population, overlaid on a geoshape map of Brazil's state borders
             <figure id="Location16"></figure>
             <p style="text-align: center;"></p>This map visualises the population distribution across all Brazilian states, using color intensity to emphasize the most populous states like São Paulo and Minas Gerais.</p>
-        </div>
 
+        </div>
     </section>
 
      <!-- Section CC8 -->
@@ -196,11 +162,8 @@
             <p style="text-align: center;"></p>This chart shows the average price trends for a specific product category (e.g., 'Dairy') over time. Aggregating daily prices highlights temporal price variations and seasonal effects, offering insights into market behaviour and price fluctuations</p>
             <figure id="Location18"></figure>
             <p style="text-align: center;"></p>This bar chart compares the average prices of products across different stores. It emphasises price disparities among retailers, aiding in identifying stores with consistently higher or lower pricing strategies.</p>
+
         </div>
-        <div style="text-align: center; margin-top: 10px;">
-            <a href="https://colab.research.google.com/drive/1RNWpkhoVXaUAaV_NMFn-bZX3fWLrQoFu?usp=sharing" target="_blank">View CC8 Colab Notebook</a>
-        </div>
-        
     </section>
 
      <!-- Section CC9 -->
@@ -214,10 +177,8 @@
             <p style="text-align: center;"></p>The histogram visualises the distribution of product prices (≤ £20), showing the frequency of different price ranges and identifying common pricing patterns.</p>
             <figure id="Location20"></figure>
             <p style="text-align: center;"></p>This scatter plot shows the daily average prices over time, highlighting trends in product pricing with a regression line indicating the overall direction.</p>
+
         </div>
-        <div style="text-align: center; margin-top: 10px;">
-            <a href="https://colab.research.google.com/drive/1xy28RcO7kZ-PDOsCkTGne8BkZFtPZEwB?usp=sharing" target="_blank">View CC9 Colab Notebook</a>
-        </div>        
     </section>
 
      <!-- Section CC10 -->
@@ -231,10 +192,8 @@
             <p style="text-align: center;"></p>Kenya's technological growth shows rapid mobile adoption, rising internet users, and financial inclusion through mobile money, highlighted interactively via three key indicators since 2000</p>
             <figure id="Location22"></figure>
             <p style="text-align: center;"></p>This chart illustrates the adoption of mobile money accounts across age groups over time, highlighting higher adoption rates among older age groups in Kenya.</p>
+
         </div>
-        <div style="text-align: center; margin-top: 10px;">
-            <a href="https://colab.research.google.com/drive/13G6TVbPYw1qwNWak0M2xPvfFBzYcDdZk?usp=sharing" target="_blank">View CC10 Colab Notebook</a>
-        </div>        
     </section>
 
 
